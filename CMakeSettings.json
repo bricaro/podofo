@@ -1,0 +1,66 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "ZLIB_INCLUDE_DIR",
+          "value": "${projectDir}\\..\\zlip",
+          "type": "STRING"
+        },
+        {
+          "name": "ZLIB_LIBRARY_RELEASE",
+          "value": "${projectDir}\\..\\zlip\\out\\build\\x86-Debug\\zlibd.lib",
+          "type": "STRING"
+        },
+        {
+          "name": "FREETYPE_INCLUDE_DIR",
+          "value": "${projectDir}\\..\\freetype\\include",
+          "type": "STRING"
+        },
+        {
+          "name": "FREETYPE_LIBRARY_RELEASE",
+          "value": "${projectDir}\\..\\freetype\\out\\build\\x86-Debug\\freetyped.lib",
+          "type": "STRING"
+        },
+        {
+          "name": "LIBJPEG_INCLUDE_DIR",
+          "value": "${projectDir}\\..\\jpeg-9e",
+          "type": "STRING"
+        },
+        {
+          "name": "LIBJPEG_LIBRARY_RELEASE",
+          "value": "${projectDir}\\..\\jpeg-9e\\libjpeg.lib",
+          "type": "STRING"
+        },
+        {
+          "name": "PODOFO_HAVE_OPENSSL_1_1",
+          "value": "TRUE",
+          "type": "BOOL"
+        },
+        {
+          "name": "LIBCRYPTO_INCLUDE_DIR",
+          "value": "${projectDir}\\..\\openssl_vc17_build\\include",
+          "type": "PATH"
+        },
+        {
+          "name": "LIBCRYPTO_LIBRARIES",
+          "value": "${projectDir}\\..\\openssl_vc17_build\\libcrypto.lib"
+        },
+        {
+          "name": "PODOFO_BUILD_SHARED",
+          "value": "TRUE",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}
